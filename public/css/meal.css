@@ -1,0 +1,845 @@
+/*ログインページ*/
+body{
+	height: 100%;
+  width: 100%;
+	font-family: 'Sawarabi Mincho', sans-serif;
+	background-color: white;
+}
+body img{
+	position: absolute;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+}
+.container{
+	margin-top: 0%;
+	width: 100%;
+}
+.box{
+	height: 100%;
+	width: 20%;
+	display: table;
+  background-color: #EEEEEE;
+}
+.card-body{
+  width: 90%;
+}
+.card-title{
+	opacity: 0.6;
+}
+.card-text{
+	margin-top: 7%;
+}
+.form-control{
+  width: 110%;
+}
+.textbox{
+	width: 20%;
+	position: absolute;
+	top: 15%;
+	right: 23%;
+}
+.emptybox{
+	margin: 15% 0 0 25%;
+	text-align: center;
+	display: flex;
+}
+.emptybox h2{
+	font-size: 4rem;
+	letter-spacing: 0.5rem
+}
+.logbtn{
+	width: 110%;
+	display: flex;
+	justify-content: space-around;
+}
+.form-control{
+	width: 100%;
+}
+/*管理者トップページ*/
+.dateform{
+	width: 15%;
+	margin: 3% auto;
+	border-radius: 20px;
+}
+.date{
+	text-align: center;
+}
+.search{
+	width: 20%;
+	height: 50px;
+	display: block;
+	margin: auto;
+	font-size: 1.2rem;
+}
+.post-search-form{
+	margin: 8% auto;
+}
+.form-control{
+	text-align: center;
+	border-radius: 10px;
+}
+
+/*管理者登録トップページ*/
+.registers{
+	width: 20%;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.registers a{
+	color: white;
+	text-decoration: none;
+	padding: 0 auto;
+
+}
+.mealregister{
+	height: 50px;
+	margin: 10% auto;
+	background-color: #008BBB;
+	padding-top: 4%;
+}
+.mealedit{
+	height: 50px;
+	margin: 10% auto;
+	background-color: #008BBB;
+	padding-top: 4%;
+}
+.newsregister{
+	height: 50px;
+	margin: 10% auto;
+	background-color: #008BBB;
+	padding-top: 4%;
+}
+.newsedit{
+	height: 50px;
+	margin: 10% auto;
+	background-color: #008BBB;
+	padding-top: 4%;
+}
+.useredit{
+	width: 80%;
+	height: 40px;
+	margin: 10% auto;
+	background-color: #008BBB;
+	padding-top: 2%;
+}
+/*管理者編集ページ*/
+.registers{
+	margin: 5% auto;
+}
+.registerbtn{
+	display: block;
+	margin: 2% auto;
+	border: 1px solid #333;
+	padding: 10px 30px;
+	background: #4689FF;
+	cursor: pointer;
+	width: 23%;
+	font-size: 1.2rem;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.subbtn{
+	display: block;
+	margin: 3% auto;
+	border: 1px solid #333;
+	padding: 10px 30px;
+	background: #4689FF;
+	cursor: pointer;
+	width: 15%;
+	font-size: 1rem;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+/*管理者ヘッダー*/
+.headers{
+	display: block;
+}
+.header{
+	width: 100%;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-around;
+	background-color: #000066;
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+	margin-top: -3.5%;
+}
+.header a{
+	width: 33.3%;
+	border: solid 1px white;
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: inline-flex;
+	padding-top: 0.5%;
+	padding-left: 13%;
+}
+/*管理者フッター*/
+.adminfooter{
+	width: 100%;
+	height: 80px;
+	background-color: #888888;
+}
+.footerlog{
+	padding-top: 1.5%;
+}
+.footerlog a{
+	font-size: 1.8rem;
+	margin-left: 7%;
+	opacity: 0.5;
+	text-decoration: none;
+	color: black;
+}
+.footerlog a:hover{
+	color: white;
+}
+.sitefooter{
+	width: 30%;
+	margin-left: 70%;
+	margin-top: -2%;
+}
+.sitefooter a{
+	margin-left: 8%;
+	text-decoration: none;
+	color: black;
+	opacity: 0.5;
+	font-size: 1rem;
+}
+.sitefooter a:hover{
+	color: white;
+}
+/*ニュース登録ページ*/
+.newsreg{
+	margin-top: 1%;
+	margin-left: 20%;
+	margin-bottom: 1%;
+}
+.date{
+}
+.user{
+	margin-left: 1%;
+}
+.newstitle{
+	margin-left: 1%;
+
+}
+textarea{
+	width: 60%;
+	height: 300px;
+	resize: none;
+}
+.formbtn{
+	width: 40%;
+}
+.newsreg{
+	display: flex;
+}
+.contact-box{
+	text-align: center;
+}
+.title{
+	font-size: 1.5rem;
+}
+.confi{
+	margin-top: 2%;
+}
+
+.formbtn{
+	margin-bottom: 3%;
+	width: 30%;
+	height: 50px;
+	border: solid 1px black;
+	font-size: 1.3rem;
+}
+footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+/*ニュース確認ページ*/
+.contact-news{
+	height: 150px;
+	margin-bottom: 20%;
+}
+
+/*ニュース登録完了ページ*/
+.completemsg{
+	font-size: 1.3rem;
+	text-align: center;
+	margin-top: 5%;
+}
+/*ニュース編集ページ*/
+table{
+	text-align: center;
+	margin: 2% auto ;
+	width: 60%;
+}
+th,td{
+	padding-left: 3%;
+}
+.btn-primary{
+	background-color: #EEEEEE;
+	color: black;
+}
+.topimg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -10;
+}
+.newsimg{
+	margin-bottom: 2%;
+	text-align: center;
+}
+/*献立登録ページ*/
+.mealpost{
+	width: 80%;
+	margin: 2% auto;
+}
+.time{
+	display: inline-flex;
+	margin: 0 auto;
+	margin-top: 3%;
+}
+.timezone{
+}
+.menu{
+	width: 40%;
+	font-size: 1.8rem;
+	margin: 2% auto;
+}
+.image{
+	margin-bottom: 2%;
+}
+
+/*献立確認ページ*/
+.contact-menuwrap{
+	width: 90%;
+	margin: 0 auto;
+}
+.menuconfirm{
+	font-size: 1.5rem;
+	width: 40%;
+	margin-left: 10%;
+	text-align: center;
+}
+.menutext{
+	font-size: 1.3rem;
+	font-weight: bold;
+	width: 30%;
+	height: 170px;
+	margin: 1.5% auto;
+	margin-left: 20%;
+	text-align: left;
+	background-color: white;
+}
+.menuimg{
+	display: flex;
+}
+.menuimag{
+	margin-right: 20%;
+	width: 45%;
+}
+.menucofi{
+	display: inline-flex;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+#textarea{
+	height: 200px;
+}
+/*献立編集ページ*/
+ .edittitle{
+	 text-align: center;
+	 margin-top: 1.5%;
+ }
+.menu{
+}
+.page-id-4 textarea{
+	height: 190px;
+	width: 90%;
+	height: 265px;
+	margin-left: 25%;
+}
+.menuimga{
+	width: 90%;
+	margin-bottom: 1%;
+	display: flex;
+}
+.imagemenu img{
+	width: 30%;
+	height: 45%;
+	opacity: 1.0;
+}
+.menuimag{
+	margin: 0 auto;
+	margin-top: 2%;
+}
+.editimg{
+	margin: 86% 0% 0 60%;
+}
+/*--------ユーザーページ--------*/
+.userheader{
+	width: 100%;
+	height: 60px;
+	background-color: #000066;
+	display: flex;
+	justify-content: space-around;
+	background-color: #000066;
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+	border-width: medium;
+	border: solid 1px white;
+}
+.userheader a{
+	width: 33.4%;
+	border: solid 1px white;
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: inline-flex;
+	padding-top: 1%;
+	padding-left: 14%;
+}
+.username{
+	background: white;
+}
+.username h6{
+	margin-left: 80%;
+}
+.headeruser{
+	background-color: white;
+}
+.username h5{
+	position: absolute;
+	top: 3%;
+	left: 5%;
+}
+/*ユーザートップページ*/
+h1{
+	text-align: center;
+	padding-top: 10%;
+}
+.usertopdate{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 0.5%;
+	font-weight: bold;
+}
+.page-id-1 img{
+	height: 93%;
+}
+.page-id-1 table{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 1.5rem;
+}
+/*ユーザーニュース詳細*/
+h4{
+	text-align: center;
+	margin-top: 1%;
+}
+dt{
+	margin-bottom: 2%;
+	font-size: 1.2rem;
+}
+dl{
+	width: 40%;
+	height: 120px;
+	border-bottom: 1px solid #CCC;
+	margin-left: 28%;
+}
+dd{
+	margin-bottom: -1%;
+}
+dd img{
+	width: 5%;
+	opacity: 1.0;
+	height: 75px;
+	padding-bottom: 1%;
+	margin-left: -7%;
+}
+.denews{
+	margin-left: 25%;
+}
+.newsdetail{
+	width: 60%;
+	margin: 0 auto;
+}
+.userdate{
+	font-size: 1.3rem;
+	margin-top: 2%;
+}
+.usernewstitle{
+	margin: 2%;
+	font-size: 2rem;
+}
+.newsimage img{
+	width: 25%;
+	height: 250px;
+	opacity: 1.0;
+	position: absolute;
+	right: 3%;
+	top: 30%;
+}
+.usernewscontent{
+	width: 80%;
+	margin-top: %;
+}
+.button002{
+	margin-left: 30%;
+}
+.button001{
+	margin-top: 1%;
+	margin-right: 90%;
+}
+.button001 a {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80px;
+    padding: 1px 10px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button001 a:hover {
+    background: #313131;
+    color: #FFF;
+}
+.button001 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-bottom: 3px solid #313131;
+    border-left: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button001 a:hover:after {
+    border-color: #FFF;
+}
+.button002 a {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 170px;
+    padding: 1px 20px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button002 a:hover {
+    background: #313131;
+    color: #FFF;
+}
+.button002 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button002 a:hover:after {
+    border-color: #FFF;
+}
+
+/*献立詳細ページ*/
+.menuwrap{
+	width: 90%;
+	margin: 0 auto;
+}
+.dateuser span{
+	font-size: 1.5rem;
+}
+.menuwraper{
+	display: flex;
+	margin-top: 1%;
+}
+.usertimezone{
+	margin-top: 1%;
+	font-size: 2rem;
+}
+.menuimage{
+	width: 40%;
+}
+.menuimage img{
+	width: 35%;
+	margin-left: -10%;
+	height: 300px;
+	opacity: 1.0;
+}
+.usermenu{
+	background-color: #FFFFEE;
+	width: 40%;
+	height: 300px;
+	font-size: 2.5rem;
+	margin-bottom: 3%;
+	margin-left: 10%;
+	text-align: left;
+}
+.button003{
+	margin-top: 1%;
+	margin-right: 70%;
+}
+.button003 a {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80px;
+    padding: 1px 10px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button003 a:hover {
+    background: #313131;
+    color: #FFF;
+}
+.button003 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-bottom: 3px solid #313131;
+    border-left: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button003 a:hover:after {
+    border-color: #FFF;
+}
+.button003 a {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80px;
+    padding: 1px 10px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button004{
+	width: 150%;
+}
+.button004 a {
+    background: #eee;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80px;
+    padding: 1px 10px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+		text-decoration: none;
+		font-size: 0.8rem;
+}
+.button004 a:hover {
+    background: #313131;
+    color: #FFF;
+}
+.button004 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-bottom: 3px solid #313131;
+    border-left: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button004 a:hover:after {
+    border-color: #FFF;
+}
+.page-id-1 textarea{
+	height: 100px;
+	width: 40%;
+}
+.page-id-1 label{
+	font-size: 2rem;
+}
+.page-id-1 span img{
+	height: 140%
+}
+.useropinion{
+	margin-bottom: 1%;
+}
+
+/*週刊献立*/
+.weekmenu{
+	text-align: center;
+	margin-top: 2%;
+	text-decoration: none;
+}
+.weekmenu a{
+	text-decoration: none;
+	margin-left: 5%;
+	color: black;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+.page-id-6 h1{
+	margin-bottom: 3%;
+}
+.page-id-6 table{
+	margin-bottom: 5%;
+	margin-top: -3%;
+}
+.page-id-6 tr{
+	padding-top: 20%;
+}
+.userstimezone{
+	font-size: 1.2rem;
+}
+
+.admenuimage img{
+	width: 40%;
+	margin-left: 10%;
+	height: 270px;
+	background-color: black;
+	opacity: 1.0;
+}
+.adusermenu{
+	background-color: white;
+	width: 40%;
+	height: 270px;
+	font-size: 2rem;
+	margin-bottom: 1%;
+	margin-left: 50%;
+}
+.admenuwraper{
+	display: flex;
+}
+/*ユーザー編集*/
+.usereditcomp{
+	text-align: center;
+}
+.nameuser{
+	margin-top: 2%;
+}
+.userbirth{
+	margin-top: 2%;
+}
+.userpass{
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+
+@media screen and (max-width: 1020px) {
+	.headers{
+		display: block;
+	}
+	.header{
+		width: 100%;
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: space-around;
+		background-color: #000066;
+		border-bottom: solid 1px;
+		border-top: solid 1px;
+		margin-top: -5%;
+	}
+	.header a{
+		width: 33.3%;
+		border: solid 1px white;
+		color: white;
+		text-decoration: none;
+		font-size: 1.5rem;
+		display: inline-flex;
+		padding-top: 0.5%;
+		padding-left: 13%;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	headers{
+		display: block;
+	}
+	.header{
+		width: 100%;
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: space-around;
+		background-color: #000066;
+		border-bottom: solid 1px;
+		border-top: solid 1px;
+		margin-top: -6%;
+	}
+	.header a{
+		width: 33.3%;
+		border: solid 1px white;
+		color: white;
+		text-decoration: none;
+		font-size: 1.5rem;
+		display: inline-flex;
+		padding-top: 0.5%;
+		padding-left: 13%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	headers{
+		display: block;
+	}
+	.header{
+		width: 100%;
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: space-around;
+		background-color: #000066;
+		border-bottom: solid 1px;
+		border-top: solid 1px;
+		margin-top: -9%;
+	}
+	.header a{
+		width: 33.3%;
+		border: solid 1px white;
+		color: white;
+		text-decoration: none;
+		font-size: 1.5rem;
+		display: inline-flex;
+		padding-top: 0.5%;
+		padding-left: 13%;
+	}
+}
